@@ -1,0 +1,49 @@
+h1 {color: red; font-size: 50px; font-family: cursive;} h2{ color: DeepPink; font-family: cursive; }
+.b {border-style: solid ;border-color: whitesmoke;}
+.anh {display: inline; font-size: 25px; color: burlywood;}
+p.center {color: snow; font-family: cursive;}
+#toggleImagesButton {margin-left: 0;padding-left: 0px; padding-right: 750px;}
+.center {text-align: center;}
+#imageGrid {display: none;} 
+#videoContainer {display: none;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  
+  #heroVideoBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    display: none;
+    @media (min-width: 768px) {
+      display: inline-block;
+    }
+  }
+  #heroImgBg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  #heroContent {
+    text-align: center;
+    padding-top: 100px;
+  }
+}

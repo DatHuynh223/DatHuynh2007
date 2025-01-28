@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title> Ngoan xinh iu của a (❁´◡`❁) </title>
+		<link rel='stylesheet' href='baotuong.css'>
+	</head>
+	<body>
+		<section id="hero">
+  			<video id="heroVideoBg" autoplay loop muted>
+    			<source type="video/mp4" src="C:\Users\huynh\Desktop\Desktop\New folder\dat\html\baotuong\50122-460241577.mp4">
+ 			</video>
+  			<img id="heroImgBg" src="https://tinyurl.com/y5gkrvxm" alt="storm">
+  			<div id="heroContent">
+  				<div class='centre'> 
+  					<h1 id='npl'> Nguyễn Phương Linh </h1>
+					<h2> Em pé của Huỳnh Tiến Đạt</h2>
+				</div>
+				<div class='b'>
+					<h3 class='center'> 😘🥑🥑🥑😍 </h3>
+					<p class='center'> Moaaaaaaaaaaaaaaaa!!!! 💕 hì hì chéc lúc mò pé đọc đc mí cái nì chéc cũm qua năm mới gòi. Hăm biết nói gì hơn chúc cục tưng của a có mụt năm thiệc là thành công, thiệc là may mắn, thiệc là hạnh phúc và nhất là thiệc là iu aaaa 🥰🥰🥰😘😘😘. Tính ra cũm tròn mụt năm ngày mình bắt đầu nhắn tin lại. Đến bây giờ a nghĩ a vẫn lựa chọn đúng về việc chọn cho mình một cơ hội để tiếp tục tiếp nối câu chuyện chúng ta. Có thể trong chuyện tình cảm này đôi khi a hơi trẻ con làm pé mệch mõi 🥹 nhma a yêu eim pé cụa a nhifuuu lắm. A thwwww eim pé của a nhifuuuuu nhennnnnnnn. Moaaaaaaaaaaaaaaaaaaaaaa 😘😘😘😘😘😘😘 
+					</p>
+				</div>
+				<br></br><br></br>
+				<h3  id="toggleImagesButton" class="anh" id='trai'>Góc ảnh 📸</h3>
+				<h3 id="toggleVideoButton" class="anh" style="cursor: pointer;"> Video 🎥 </h3>
+				<div id="imageGrid">
+					<table>
+						<tr>
+							<td>
+								<img src="C:\Users\huynh\Desktop\Desktop\New folder\dat\html\baotuong\z6269481949240_fcaae796a0aec8a5a30279f43a16663d.jpg" width="350px" height="220px"  >
+							</td>
+							<td>
+								<img src="C:\Users\huynh\Desktop\Desktop\New folder\dat\html\baotuong\z6269481952453_78b891c28ecc9cb603e2ed4bd7a19fe2.jpg" width="350px" height="220px" >
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="C:\Users\huynh\Desktop\Desktop\New folder\dat\html\baotuong\z6269481950233_c01b3de3c8138e31663739f23fb3a9bb.jpg" width="350px" height="220px" >
+							</td>
+							<td>
+								<img src="C:\Users\huynh\Desktop\Desktop\New folder\dat\html\baotuong\z6269481940265_4fd726389f51c92ce3ce0e95ed5fec9f.jpg" width="350x" height="220px"> 
+							</td>
+						</tr>
+					</table>
+			</div>
+			<div id="videoContainer" style="position:relative;left:380px;top:2px;">
+					<video id="customVideo" width="700px" height="440px" controls>
+						<source src="C:\Users\huynh\Desktop\Desktop\New folder\dat\html\baotuong\6269482299410.mp4" type="video/mp4">
+					</video>
+				</div>
+	</section>
+	<script>
+        const video = document.getElementById('heroVideoBg');
+        const textElement = document.getElementById('npl');
+
+        textElement.addEventListener('click', () => {
+            video.muted = false;
+            video.play();
+            alert("🎆🎇💕🎇🎇");
+        });
+
+        const toggleImagesButton = document.getElementById('toggleImagesButton');
+        const imageGrid = document.getElementById('imageGrid');
+
+        toggleImagesButton.addEventListener('click', () => {
+            if (imageGrid.style.display === 'none' || imageGrid.style.display === '') {
+                imageGrid.style.display = 'block';
+                toggleImagesButton.textContent = "Ẩn ảnh 📷";
+            } else {
+                imageGrid.style.display = 'none';
+                toggleImagesButton.textContent = "Góc ảnh 📸";
+            }
+        });
+         toggleVideoButton.addEventListener('click', () => {
+            if (videoContainer.style.display === 'none' || videoContainer.style.display === '') {
+                videoContainer.style.display = 'block';
+                customVideo.play();  // Phát video khi hiện
+                toggleVideoButton.textContent = "Ẩn Video 🎥";
+            } else {
+                videoContainer.style.display = 'none';
+                customVideo.pause(); // Dừng video khi ẩn
+                toggleVideoButton.textContent = "Video 🎥";
+            }
+        });
+    </script>
+
+
+		
+	</body>
+</html>
